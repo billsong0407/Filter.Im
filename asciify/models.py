@@ -12,7 +12,7 @@ ACTION_CHOICES = (
 )
 
 class Upload(models.Model):
-    image = models.ImageField(upload_to='images')
+    image = models.ImageField(default='default.jpg', upload_to='images/')
     action = models.CharField(max_length=50, choices=ACTION_CHOICES)
     updated = models.DateTimeField(auto_now=True)
     created = models.DateTimeField(auto_now_add=True)
@@ -38,3 +38,7 @@ class Upload(models.Model):
         self.image.save(str(self.image), ContentFile(image_jpg), save=False)
         
         super().save(args, **kwargs)
+        
+class Hotel(models.Model): 
+    name = models.CharField(max_length=50) 
+    hotel_Main_Img = models.ImageField(upload_to='images/')
