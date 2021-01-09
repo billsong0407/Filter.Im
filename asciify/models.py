@@ -7,8 +7,10 @@ from django.core.files.base import ContentFile
 
 ACTION_CHOICES = (
     ('NO_FILTER', 'no_filter'),
-    ('COLORIZED', 'COLORIZED'),
-    ('BLURRED', 'BLURRED'),
+    ('EDGE DETECTION', 'edge detection'),
+    ('SHARPENING', 'sharpening'),
+    ('EMBOSSING', 'embossing'),
+    ('BLURRED', 'blurred'),
 )
 
 class Upload(models.Model):

@@ -18,6 +18,8 @@ def about(request):
     if request.method == 'GET': 
   
         # getting all the objects of hotel. 
-        image = Upload.objects.all()  
+        image = Upload.objects.latest('created')
+        # entries= Upload.objects.all()
+        # entries.delete()
         return render(request, 'asciify/about.html', 
-                     {'upload' : image[0]})
+                     {'upload' : image})
