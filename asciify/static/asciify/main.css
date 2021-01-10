@@ -2,10 +2,14 @@ body {
   background: #fafafa;
   color: #333333;
   margin-top: 3.5rem;
+  /* font-family: 'Titillium Web', sans-serif; */
+  font-family: 'Assistant', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: #444444;
+  font-weight: bold;
+  /* font: 30px; */
 }
 
 ul {
