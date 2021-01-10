@@ -2,14 +2,12 @@ body {
   background: #fafafa;
   color: #333333;
   margin-top: 3.5rem;
-  /* font-family: 'Titillium Web', sans-serif; */
   font-family: 'Assistant', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: #444444;
   font-weight: bold;
-  /* font: 30px; */
 }
 
 ul {
@@ -18,8 +16,8 @@ ul {
 
 .bg-steel {
   background: #1F1C2C;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #928DAB, #1F1C2C);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #928DAB, #1F1C2C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #928DAB, #1F1C2C);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #928DAB, #1F1C2C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
@@ -120,6 +118,18 @@ a.article-title:hover {
 
 .img-row img{
   width: 300px;
+}
+
+.footer{
+  background: #1F1C2C;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #928DAB, #1F1C2C);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #928DAB, #1F1C2C);
+  text-align: center;
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  /* display: flex; */
+  vertical-align: middle;
 }
 
 @media screen and (max-width: 1200px){
