@@ -48,6 +48,7 @@
       </nav>
     </header>
     <main role="main" class="container">
+      
       <div class="row">
         <div class="col-md-11">
           {% if messages %}
@@ -57,8 +58,8 @@
               </div>
             {% endfor %}
           {% endif %}
-          <div class="container intro">
-            <img src="{% static 'asciify/logo.png' %}" alt="logo"></img>
+          <div class="banner container ">
+            <img src="{% static 'asciify/logo.jpg' %}" alt="logo"></img>
           </div>
           {% block content %}{% endblock %}
         </div>
