@@ -1,13 +1,14 @@
 {% extends "./base.html" %}
 {% load crispy_forms_tags %}
+{% load static %}
 {% block content %}
-  <div class="content-section">
+  <div class="content-section container-fluid">
     <h2> Introduction </h2>
     <p> Filter.im is a web application that allows you to upload an image and apply image filters to it.
         The filtering effect is achieved by 2D image convolution. 
         Available transformation effects include edge detection, sharpening, embossing, blurring, etc.</p>
   </div>
-  <div class="content-section">
+  <div class="content-section container-fluid">
     <h2> Image convolution </h2>
     <p> Image convolution is a two-dimensional convolution operation in image processing. It is a favored technique 
         used in image processing and object detection.
@@ -18,6 +19,22 @@
     <p> Many mathematical theories and models can be achieved using image convolution. These models can
         be executed in matrix form for digital image processing, recognized as image convolution kernel.
     </p>
+
+    <h4> Example: </h4>
+    <div class="row img-row">
+      <div class="col-md-4">
+        <img src="{% static 'asciify/convolution/edge_detection.jpg' %}" alt="edge_detection"></img>
+        <figcaption>Edge Detection</figcaption>
+      </div>
+      <div class="col-md-4">
+        <img src="{% static 'asciify/convolution/sharpening.jpg' %}" alt="sharpening"></img>
+        <figcaption>Sharpening</figcaption>
+      </div>
+      <div class="col-md-4">
+        <img src="{% static 'asciify/convolution/embossing.jpg' %}" alt="embossing"></img>
+        <figcaption>Embossing</figcaption>
+      </div>
+    </div>
   </div>
   <div class="content-section"> 
       <form method = "post" enctype="multipart/form-data"> 

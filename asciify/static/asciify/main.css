@@ -89,3 +89,23 @@ a.article-title:hover {
 .intro{
   text-align: center;
 }
+
+.img-row{
+  text-align: center;
+}
+
+.img-row img{
+  width: 300px;
+}
+
+@media screen and (max-width: 1200px){
+  .img-row img{
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 991px){
+  .img-row img{
+    width: 180px;
+  }
+}
