@@ -1,0 +1,17 @@
+[
+    {
+        "AllowedHeaders": [
+            "*"
+        ],
+        "AllowedMethods": [
+            "GET",
+            "HEAD",
+            "POST",
+            "PUT"
+        ],
+        "AllowedOrigins": [
+            "*"
+        ],
+        "ExposeHeaders": []
+    }
+]
