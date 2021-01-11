@@ -36,13 +36,13 @@
       </div>
     </div>
   </div>
-  <div class="content-section"> 
+  <div class="content-section" id="home"> 
     <h2> Try it yourself! </h2>
     <br>
     <form method = "post" enctype="multipart/form-data"> 
       {% csrf_token %} 
       {{ form.as_p }} 
-      <button type="submit">Apply</button> 
+      <button class="btn btn-outline-primary" type="submit">Apply</button> 
     </form>
   </div>
 {% endblock content %}

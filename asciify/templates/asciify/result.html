@@ -1,8 +1,9 @@
 {% extends "./base.html" %}
 {% load crispy_forms_tags %}
 {% block content %}
-  <div class="content-section container-fluid mb-5">  
+  <div class="content-section container-fluid mb-5" style="text-align:center;">  
     <h2> Result </h2>
-    <img src="{{ upload.image.url }}" class="img-responsive result-img" style="width: 100%; padding: 20px;" />  
+    <img src="{{ upload.image.url }}" class="img-responsive result-img" style="width: 100%; padding: 20px;" />
+    <a class="btn btn-outline-primary" href="{% url 'asciify-home' %}#home">Try another one</a> 
   </div>
 {% endblock content %}
