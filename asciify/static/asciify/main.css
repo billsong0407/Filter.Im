@@ -170,4 +170,8 @@ a.article-title:hover {
     width: 60%;
     height: 60%;
   }
+
+  .result-img{
+    padding: 5px !important;
+  }
 }

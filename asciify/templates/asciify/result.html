@@ -1,12 +1,8 @@
 {% extends "./base.html" %}
 {% load crispy_forms_tags %}
 {% block content %}
-  <div class="content-section">
-      <h1> Hi </h1>
-  </div>
-  <div class="content-section">  
-    <div class="col-md-4">  
-        <img src="{{ upload.image.url }}" class="img-responsive" style="width: 100%; float: left; margin-right: 10px;" /> 
-    </div> 
+  <div class="content-section container-fluid mb-5">  
+    <h2> Result </h2>
+    <img src="{{ upload.image.url }}" class="img-responsive result-img" style="width: 100%; padding: 20px;" />  
   </div>
 {% endblock content %}
