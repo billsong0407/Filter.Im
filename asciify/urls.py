@@ -6,7 +6,7 @@ from . import views
 
 urlpatterns = [
     path('', views.home, name='asciify-home'),
-    path('about', views.about, name='asciify-about'),
+    path('result', views.result, name='asciify-result'),
 ]
 
 if settings.DEBUG: 

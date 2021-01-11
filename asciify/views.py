@@ -9,17 +9,17 @@ def home(request):
   
         if form.is_valid(): 
             form.save() 
-            return redirect('about')
+            return redirect('result')
     else: 
         form = UploadForm()  
     return render(request, 'asciify/home.html', {'form': form})
 
-def about(request):
+def result(request):
     if request.method == 'GET': 
   
         # getting all the objects of hotel. 
         image = Upload.objects.latest('created')
         # entries= Upload.objects.all()
         # entries.delete()
-        return render(request, 'asciify/about.html', 
+        return render(request, 'asciify/result.html', 
                      {'upload' : image})

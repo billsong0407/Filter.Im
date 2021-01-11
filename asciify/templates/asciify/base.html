@@ -35,7 +35,7 @@
           <div class="collapse navbar-collapse" id="navbarToggle">
             <div class="navbar-nav mr-auto">
               <a class="nav-item nav-link" href="{% url 'asciify-home' %}">Home</a>
-              <a class="nav-item nav-link" href="{% url 'asciify-about' %}">About</a>
+              {% comment %} <a class="nav-item nav-link" href="{% url 'asciify-about' %}">About</a> {% endcomment %}
             </div>
             <!-- Navbar Right Side -->
             <div class="navbar-nav">
@@ -70,9 +70,9 @@
       </div>
     </main>
     <footer class="footer">
-      <p>Thank you for visiting!</p>
-      <p>Built with Django, Python, AWS, Heroku</p>
-      <p>songb10@gmail.com</p>
+      Thank you for visiting!<br>
+      Built with Django, Python, AWS, Heroku<br>
+      songb10@gmail.com
     </footer>
 
     <!-- Optional JavaScript -->
