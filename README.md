@@ -17,6 +17,7 @@ Home page:
 Apply edge detection effect to this image:
 <br>
 <img src="./demo_pics/bird.jpg" width="300" alt="bird">
+<br>
 <sub>source: https://www.dailysabah.com/life/environment/bird-sets-world-record-for-longest-nonstop-flight-from-alaska-to-new-zealand
 </sub>
 
